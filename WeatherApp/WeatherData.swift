@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct WeatherResponse: Codable {
+    let current: CurrentWeather
+}
+
+struct CurrentWeather: Codable {
+    let temperature_2m: Double
+    let wind_speed_10m: Double
+    let weather_code: Int
+}
